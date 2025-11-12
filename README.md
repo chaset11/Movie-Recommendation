@@ -10,4 +10,4 @@ Chase Thompson and Mclean Dries
 ### Example Input and Output 
 | Input                      | Output                    |
 |----------------------------|---------------------------|
-|![Input](input_example.jpg) | 10  |
+|![Input](input_example.png) | 10  |
