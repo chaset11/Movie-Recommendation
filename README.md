@@ -20,8 +20,21 @@ import lightgbm as lgb
 from math import sqrt
 
 # Load MovieLens Data
-ratings = pd.read_csv("ratings.csv")
-movies = pd.read_csv("movies.csv")
+## Define the path to your extracted MovieLens 25M dataset directory
+data_dir = 'path/to/your/extracted/ml-25m' 
+
+## Load the ratings.csv file
+ratings_df = pd.read_csv(os.path.join(data_dir, 'ratings.csv'))
+
+## Load the movies.csv file
+movies_df = pd.read_csv(os.path.join(data_dir, 'movies.csv'))
+
+## Display the first few rows of each DataFrame to verify loading
+print("Ratings DataFrame:")
+print(ratings_df.head())
+
+print("\nMovies DataFrame:")
+print(movies_df.head())
 
 # Preprocessing
 ## Split genres into lists
